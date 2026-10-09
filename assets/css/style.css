@@ -1,0 +1,198 @@
+/* assets/css/style.css */
+
+:root {
+    --primary-dark: #0a2e5c;
+    --primary: #1a4a7a;
+    --primary-light: #2a6aaa;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Navbar */
+.navbar-instansi {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    border-bottom: 3px solid var(--gold);
+    padding: 0.8rem 0;
+}
+
+.navbar-instansi .navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.navbar-instansi .nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    transition: all 0.3s;
+}
+
+.navbar-instansi .nav-link:hover {
+    color: var(--gold-light) !important;
+}
+
+/* Card */
+.card-instansi {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(10, 46, 92, 0.1);
+    overflow: hidden;
+}
+
+.card-instansi .card-header {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: #fff;
+    border-bottom: 3px solid var(--gold);
+    padding: 1.2rem 1.5rem;
+}
+
+.btn-instansi {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border: none;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-instansi:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 74, 122, 0.3);
+    color: #fff;
+}
+
+.btn-gold {
+    background: var(--gold);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background: #b8943a;
+    color: #fff;
+}
+
+/* Status Badge */
+.badge-status {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.badge-status.pending {
+    background: #ffc107;
+    color: #000;
+}
+
+.badge-status.diverifikasi {
+    background: #17a2b8;
+    color: #fff;
+}
+
+.badge-status.lulus {
+    background: #28a745;
+    color: #fff;
+}
+
+.badge-status.ditolak {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--gold);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px var(--gold);
+}
+
+.timeline-item.active::before {
+    background: #28a745;
+    box-shadow: 0 0 0 3px #28a745;
+}
+
+.timeline-item.completed::before {
+    background: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary);
+}
+
+/* Dashboard Stats */
+.stat-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    border-left: 5px solid var(--primary);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.stat-card .stat-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    background: var(--primary);
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+/* Footer */
+.footer-instansi {
+    background: var(--primary-dark);
+    color: rgba(255,255,255,0.7);
+    padding: 2rem 0;
+    border-top: 3px solid var(--gold);
+}
+
+.footer-instansi a {
+    color: var(--gold-light);
+    text-decoration: none;
+}
+
+.footer-instansi a:hover {
+    color: #fff;
+}
