@@ -1,5 +1,0 @@
-# uploads/.htaccess
-Options -Indexes
-<FilesMatch "\.(jpg|jpeg|png|gif|pdf|doc|docx)$">
-    Header set Content-Disposition inline
-</FilesMatch>
